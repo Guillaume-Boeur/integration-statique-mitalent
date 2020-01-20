@@ -1,0 +1,46 @@
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+/* Section 1 */
+
+.container-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.element{
+    height: 280px;
+    width: 200px;
+}
+.element>img{
+    height: 100%;
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-gauche{
+    display: flex;
+}
+.nav-droite{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    margin: 0px 5px 0px 5px;
+}
+a{
+    text-decoration: none;
+}
+/* Section 2 */
+
+/* Section 3 */
+
+.latest{
+    text-align: center;
+}
+.latest>hr{
+    width: 50px;
+}
