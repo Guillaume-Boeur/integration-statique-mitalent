@@ -1,11 +1,9 @@
 /* Mise a zero */
 
 html, body {
-    color: #000000;
     margin: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
 }
 
 ul{
@@ -23,16 +21,59 @@ a{
 
 /*------------------------------*/
 
+/* Utilise plusieur fois */
+    /* font */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+    /* color */
+
+.color-black {
+    color: #000000;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-grey {
+    color: #6a696f;
+}
+
+    /* display */
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------------------------------*/
+
 /* Sous-menu */
 .sub-nav {
     margin: 70px 0;
-    font-family: 'Nunito', sans-serif;
     font-weight: 700;
 }
 
 .sub-nav > ul {
-    display: flex;
-    justify-content: center;
     flex-direction: row;
 }
 
@@ -59,9 +100,7 @@ a{
 }
 
 .talent > ul {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .talent > ul > li {
@@ -146,7 +185,6 @@ a{
 }
 
 .stories > div > ul {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 140px 520px 422px;
     grid-column-gap: 40px;
@@ -177,6 +215,8 @@ a{
     height: 100%;
 }
 
+/* Placement des photos dans la grille */
+
 .image1 {
     grid-area: 1/1/2/2;
 }
@@ -191,7 +231,6 @@ a{
 
 .image4 {
     grid-area: 2/1/3/3;
-    background-color: #b5d3d3;
 }
 
 .image5 {
@@ -206,11 +245,13 @@ a{
     grid-area: 3/2/4/3;
 }
 
-.image-texte-vertical > a {
+/* ----------------------- */
+
+.image-text-vertical > a {
     flex-direction: column;
 }
 
-.image-texte-left > a {
+.image-text-left > a {
     flex-direction: row-reverse;
 }
 
@@ -218,6 +259,49 @@ a{
     align-items: flex-end;
 }
 
-.image-texte-grand {
+.image-text-grand {
     font-size: 150%;
 }
+
+/* footer */
+
+footer {
+    margin: 0 5% 0 5%;
+}
+
+footer hr {
+    border: 0.4px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .haut {
+    font-family: 'Playfair Display', serif;
+}
+
+footer .haut .droite {
+    padding: 20px;
+    font-size: 0.8em;
+    word-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .haut .droite hr {
+    margin-right: 20px;
+    border: 0.4px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .bas {
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+footer .bas p {
+    font-size: 0.8em;
+}
+
+footer .bas ul li {
+    display: flex;
+    list-style-type: none;
+    padding: 0 20px 0 0;
+}
+
+/* END */
