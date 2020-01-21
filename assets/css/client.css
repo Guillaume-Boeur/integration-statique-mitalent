@@ -1,25 +1,29 @@
-body, html {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   margin: 0;
-  padding: 0;
 }
 
-header {
-  height: 90%;
-  width: 100%;
+.partie {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 25%;
 }
 
-/* nav */
+/* navbar */
+.navbar {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 1;
+}
+
 nav {
-  width: 100%;
-  position: absolute;
   margin-top: 1%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 0.8em;
+  margin-right: 2%;
 }
 
 nav #mainTitle {
@@ -53,74 +57,148 @@ nav .nav_gauche {
 
 nav .nav_gauche li {
   padding-right: 20%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
-nav .searchClient {
+nav .search {
   display: flex;
   width: 20%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.8em;
 }
 
-nav .searchClient hr {
+nav .search i {
+  font-size: 1.5em;
+  color: #D2E5E5;
+}
+
+nav #searchClient {
+  margin-right: 40%;
+}
+
+nav hr {
   border: 0.5px solid lightgrey;
 }
 
-nav .searchClient #search {
-  margin-right: 30%;
+/* */
+/* gauche */
+.gauche {
+  background-color: #D8EBED;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
 }
 
-/* partie */
-.partie {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  height: 100%
+.gauche .vr {
+  border-left: 1px solid black;
+  height: 5%;
+  width: 10px;
 }
 
-.partie .gauche {
-  background-color: #67C5E4;
-}
-
-/* footer */
-footer {
-  margin: 0 5% 0 5%;
-}
-
-footer .haut {
+.gauche ul {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  font-family: 'Playfair Display', serif;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-footer .haut .droite {
-  display: flex;
-  padding: 20px;
-  font-size: 0.8em;
-  word-spacing: 0.2em;
-  font-family: 'Montserrat', sans-serif;
-}
-
-footer .haut .droite hr {
-  display: flex;
-  margin-right: 20px;
-  border: 0.4px solid rgba(0, 0, 0, 0.1);
-}
-
-footer .bas {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Montserrat', sans-serif;
-}
-
-footer .bas p {
-  font-size: 0.8em;
-}
-
-footer .bas ul {
-  display: flex;
-}
-
-footer .bas ul li {
-  display: flex;
+.gauche ul li {
   list-style-type: none;
-  padding: 0 20px 0 0;
+  padding-bottom: 20px;
+}
+
+.gauche #nombre {
+  margin-bottom: 10%;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* */
+/* droite */
+.droite {
+  background-color: #FFFFFF;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+/* */
+/* milieu_gauche */
+.milieu_gauche {
+  background-color: #FFFFFF;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+}
+
+.milieu_gauche .contain_milieu_gauche {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+}
+
+.milieu_gauche .contain_milieu_gauche h1 {
+  font-size: 4em;
+  margin-bottom: 1%;
+}
+
+.milieu_gauche .contain_milieu_gauche button {
+  height: 12%;
+  width: 60%;
+  border-radius: 5px;
+  background-color: #B5D3D3;
+  color: #FFFFFF;
+}
+
+.milieu_gauche .contain_milieu_gauche .leading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.milieu_gauche .contain_milieu_gauche .leading .hrLeading {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.milieu_gauche .contain_milieu_gauche .leading .hrLeading hr {
+  width: 100%;
+  border: 2px solid #B5D3D3;
+}
+
+/* */
+.milieu_droite {
+  background-color: purple;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  width: 175%;
+  height: 90%;
+  background-image: url("../images/photo_talent.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.milieu_droite .description {
+  height: 26%;
+  width: 80%;
+  background-color: rgba(238, 238, 238, 0.9);
+  position: relative;
+  top: 74%;
+}
+
+.milieu_droite .fleche {
+  background-color: #FFFFFF;
+  height: 26%;
+  width: 20%;
+  position: relative;
+  top: 74%;
 }
