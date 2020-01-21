@@ -26,6 +26,8 @@ a{
 /* Sous-menu */
 .sub-nav {
     margin: 70px 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
 }
 
 .sub-nav > ul {
@@ -42,6 +44,11 @@ a{
 
 .sub-nav > ul > li > a {
     color: #6a696f;
+}
+
+.sub-nav > ul > li > a:hover {
+    color: #000000;
+    border-bottom: 2px solid #000000;
 }
 
 /* Liste image */
@@ -109,7 +116,7 @@ a{
     width: 100%;
     display: block;
     text-align: center;
-    margin: 50px 0;
+    margin: 90px 0;
 }
 
 .talent > p > a {
@@ -130,6 +137,12 @@ a{
 .stories > h2 {
     text-align: center;
     font-size: 300%;
+    margin: 30px 0;
+}
+
+.stories > hr {
+    width: 150px;
+    margin-bottom: 50px;
 }
 
 .stories > div > ul {
@@ -143,18 +156,18 @@ a{
 .stories > div > ul > li > a {
     display: flex;
     height: 100%;
-    background-color: grey;
 }
 
 .stories > div > ul > li > a > div {
-    margin-left: 30px;
+    margin: 20px;
 }
 
 .stories > div > ul > li > a > div > p:last-of-type {
-    color: red;
+    font-size: 70%;
+    color: #6a696f;
 }
 
-.image1 img, .image2 img, .image3 img {
+.image-petite img {
     width: 150px;
     height: 130px;
 }
@@ -164,26 +177,47 @@ a{
     height: 100%;
 }
 
-.image1{
+.image1 {
     grid-area: 1/1/2/2;
 }
 
-.image2{
+.image2 {
     grid-area: 1/2/2/3;
 }
 
-.image3{
+.image3 {
     grid-area: 1/3/2/4;
 }
 
-.image4{
+.image4 {
     grid-area: 2/1/3/3;
+    background-color: #b5d3d3;
 }
 
-.image5{
+.image5 {
     grid-area: 2/3/4/4;
 }
 
-.image5 > a {
+.image6 {
+    grid-area: 3/1/4/2;
+}
+
+.image7 {
+    grid-area: 3/2/4/3;
+}
+
+.image-texte-vertical > a {
     flex-direction: column;
+}
+
+.image-texte-left > a {
+    flex-direction: row-reverse;
+}
+
+.image-text-bottom > a {
+    align-items: flex-end;
+}
+
+.image-texte-grand {
+    font-size: 150%;
 }
