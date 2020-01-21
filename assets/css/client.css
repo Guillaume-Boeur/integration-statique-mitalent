@@ -1,0 +1,126 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 90%;
+  width: 100%;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  position: absolute;
+  margin-top: 1%;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8em;
+}
+
+nav #mainTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  margin-right: 10%;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 3%;
+  display: flex;
+  align-items: center;
+}
+
+nav .nav_gauche {
+  display: flex;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+nav .nav_gauche li {
+  padding-right: 20%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav .searchClient {
+  display: flex;
+  width: 20%;
+}
+
+nav .searchClient hr {
+  border: 0.5px solid lightgrey;
+}
+
+nav .searchClient #search {
+  margin-right: 30%;
+}
+
+/* partie */
+.partie {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100%
+}
+
+.partie .gauche {
+  background-color: #67C5E4;
+}
+
+/* footer */
+footer {
+  margin: 0 5% 0 5%;
+}
+
+footer .haut {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+}
+
+footer .haut .droite {
+  display: flex;
+  padding: 20px;
+  font-size: 0.8em;
+  word-spacing: 0.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer .haut .droite hr {
+  display: flex;
+  margin-right: 20px;
+  border: 0.4px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .bas {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer .bas p {
+  font-size: 0.8em;
+}
+
+footer .bas ul {
+  display: flex;
+}
+
+footer .bas ul li {
+  display: flex;
+  list-style-type: none;
+  padding: 0 20px 0 0;
+}
