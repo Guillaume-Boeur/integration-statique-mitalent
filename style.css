@@ -1,4 +1,4 @@
-/* Mise a zero */
+/* --- Mise a zero --- */
 
 html, body {
     margin: 0;
@@ -21,7 +21,7 @@ a{
 
 /*------------------------------*/
 
-/* Utilise plusieur fois */
+/* --- Utilise plusieur fois --- */
     /* font */
 .font-poppins {
     font-family: 'Poppins', sans-serif;
@@ -65,9 +65,27 @@ a{
     justify-content: space-between;
 }
 
+    /* autre */
+
+.image-text-vertical > a {
+    flex-direction: column;
+}
+
+.image-text-left > a {
+    flex-direction: row-reverse;
+}
+
+.image-text-bottom > a {
+    align-items: flex-end;
+}
+
+.image-text-grand {
+    font-size: 150%;
+}
+
 /*------------------------------*/
 
-/* Sous-menu */
+/* --- Sous-menu --- */
 .sub-nav {
     margin: 70px 0;
     font-weight: 700;
@@ -92,7 +110,7 @@ a{
     border-bottom: 2px solid #000000;
 }
 
-/* Liste image */
+/* --- Liste image --- */
 
 .talent {
     width: 90%;
@@ -166,7 +184,7 @@ a{
     color: #ffffff;
 }
 
-/* Stories */
+/* --- Stories --- */
 
 .stories {
     width: 90%;
@@ -215,7 +233,7 @@ a{
     height: 100%;
 }
 
-/* Placement des photos dans la grille */
+    /* Placement des photos dans la grille */
 
 .image1 {
     grid-area: 1/1/2/2;
@@ -247,23 +265,19 @@ a{
 
 /* ----------------------- */
 
-.image-text-vertical > a {
-    flex-direction: column;
+
+.image4 img {
+    width: 684px;
+    height: 520px;
 }
 
-.image-text-left > a {
-    flex-direction: row-reverse;
-}
+/* ===================================================== */
 
-.image-text-bottom > a {
-    align-items: flex-end;
-}
+/* ===================================================== */
 
-.image-text-grand {
-    font-size: 150%;
-}
+/* ===================================================== */
 
-/* footer */
+/* --- footer --- */
 
 footer {
     margin: 0 5% 0 5%;
@@ -304,4 +318,4 @@ footer .bas ul li {
     padding: 0 20px 0 0;
 }
 
-/* END */
+/* --- END --- */
