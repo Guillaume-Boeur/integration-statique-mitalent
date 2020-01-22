@@ -55,6 +55,11 @@ nav .nav_gauche {
   display: flex;
   letter-spacing: 2px;
   align-items: center;
+  color: #FFFFFF;
+}
+
+.nav_gauche a {
+  color: #FFFFFF;
 }
 
 nav .nav_gauche li {
@@ -83,119 +88,141 @@ nav hr {
 }
 
 /* */
+/* partie */
+.partie {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr 1fr);
+  grid-auto-rows: 25%;
+}
+
+/* */
 /* partie gauche */
 .partie_gauche {
-  background-color: #D8EBED;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 5;
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  margin-left: -2%;
-}
-
-.icon ul li {
-  list-style-type: none;
-  padding: 70%;
-}
-
-.boutton_contact {
-  background-color: yellow;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  height: 45%;
-  position: relative;
-  top: 55%;
-}
-
-.boutton_contact button {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  background-image: linear-gradient(to right top, #d9e7e7, #c7e3e3, #b4dedf, #a1dadb, #8cd5d7);
-  color: #FFFFFF;
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 2px;
-  font-size: 0.8em;
-}
-
-.boutton_contact_user {
-  background-color: #FFFFFF;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  height: 45%;
-  width: 60%;
-  position: relative;
-  top: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2em;
-}
-
-/* */
-/* partie mileu */
-.partie_milieu {
-  background-color: #FFFFFF;
-  grid-column-start: 5;
-  grid-column-end: 10;
-  grid-row-start: 1;
-  grid-row-end: 5;
-  font-family: 'Nunito', sans-serif;
-}
-
-.contain_partie_milieu {
-  width: 60%;
-  height: 100%;
-  background-color: #FFFFFF;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.text_milieu h3::first-letter {
-  float: left;
-  padding: 3px;
-  font-size: 2.1em;
-}
-
-.text_milieu p {
-  font-weight: 200;
-}
-
-.image_motivation {
-  height: 30%;
-  width: 100%;
-  margin-top: 20%;
-  background-image: url("../images/motivation.jpg");
+  background-image: url("../images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* */
-/* partie droite */
-.partie_droite_haut {
-  background-color: #D8EBED;
-  grid-column-start: 10;
-  grid-row-start: 1;
-  grid-row-end: 3;
+.contact_contain {
+  width: 60%;
+  height: 80%;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
 }
 
-.partie_droite_bas {
-  background-color: #FFFFFF;
-  grid-column-start: 10;
-  grid-row-start: 3;
+.contact_contain h1 {
+  font-size: 4em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact_contain p {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+}
+
+.contact_contain #us {
+  letter-spacing: -4px;
+}
+
+.boutton_directions {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
   grid-row-end: 5;
+  height: 50%;
+  position: relative;
+  top: 50%;
+  left: 20%;
+}
+
+.boutton_directions button {
+  background-image: linear-gradient(to right top, #d9e7e7, #c7e3e3, #b4dedf, #a1dadb, #8cd5d7);
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  border: 0;
+}
+
+.boutton_icon {
+  background-color: #FFFFFF;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  height: 50%;
+  position: relative;
+  top: 50%;
+  width: 60%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+/* */
+.partie_milieu {
+  background-color: blue;
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.contain_milieu {
+  height: 100%;
+  width: 60%;
+  background-color: #FFFFFF;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Nunito', sans-serif;
+}
+
+.contain_milieu #milieu_text {
+  font-size: 1.5em;
+}
+
+.contact {
+  height: 40%;
+  display: grid;
+  background-color: blue;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 50%;
+}
+
+.element_contact_adresse {
+  background-color: green;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.element_contact_phone {
+  background-color: purple;
+}
+
+.element_contact_mail {
+  background-color: yellow;
+}
+
+.element_contact {
+  display: flex;
 }
 
 /* */
