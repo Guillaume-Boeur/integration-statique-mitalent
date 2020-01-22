@@ -144,6 +144,7 @@ nav hr {
 /* */
 /* partie mileu */
 .partie_milieu {
+  margin-top: 20%;
   background-color: #FFFFFF;
   grid-column-start: 5;
   grid-column-end: 10;
@@ -160,6 +161,10 @@ nav hr {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.text_milieu {
+  height: 50%;
 }
 
 .text_milieu h3::first-letter {
