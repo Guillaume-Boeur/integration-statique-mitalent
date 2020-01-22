@@ -6,6 +6,10 @@ html, body {
     width: 100%;
 }
 
+h1 {
+    margin: 0;
+}
+
 ul{
     padding: 0;
 }
@@ -22,6 +26,7 @@ a{
 /*------------------------------*/
 
 /* --- Utilise plusieur fois --- */
+
     /* font */
 .font-poppins {
     font-family: 'Poppins', sans-serif;
@@ -29,6 +34,14 @@ a{
 
 .font-nunito {
     font-family: 'Nunito', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
     /* color */
@@ -43,6 +56,10 @@ a{
 
 .color-grey {
     color: #6a696f;
+}
+
+.color-blue {
+    color: #b5d3d3;
 }
 
     /* display */
@@ -85,7 +102,127 @@ a{
 
 /*------------------------------*/
 
-/* --- Sous-menu --- */
+/* --- header --- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+}
+
+    /*  navbar  */
+
+.nav {
+    font-size: 0.8em;
+    align-items: center;
+}
+
+.nav .nav-gauche {
+    display: flex;
+    letter-spacing: 2px;
+    align-items: center;
+    width: 450px;
+}
+
+.nav .nav-gauche li {
+    padding-right: 50px;
+}
+
+.nav #mainTitle {
+    font-size: 2.5em;
+}
+
+.nav .search {
+    width: 450px;
+    text-align: end;
+}
+
+/* ----------------------- */
+
+    /*  intro  */
+
+.carre-bleu {
+    position: absolute;
+    background-color: #b5d3d3;
+    width: 660px;
+    height: 620px;
+    z-index: -2;
+    right: 0;
+    top: 0;
+}
+
+.intro {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.intro .icon {
+    margin-top: 120px;
+    width: 100%;
+}
+
+.intro .icon li {
+    padding: 20px 0;
+}
+
+.intro-image {
+    position: absolute;
+    bottom: 0;
+    left: 260px;
+    z-index: -1;
+    width: 1120px;
+}
+
+.intro-image img{
+    width: 100%;
+}
+
+.intro h1 {
+    width: 100%;
+    margin-left: 180px;
+    font-size: 500%;
+}
+
+.intro .intro-p {
+    margin-left: 161px;
+    margin-right: 1080px;
+}
+
+.intro .intro-sub-nav {
+    text-align: right;
+}
+
+.intro .intro-sub-nav li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.intro .intro-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.intro .intro-profile p {
+    margin: 0;
+    align-self: center;
+    padding: 30px 80px;
+    background-color: #b5d3d3;
+}
+
+.intro .intro-profile .intro-profile-icone{
+    background-color: #ffffff;
+    padding: 30px 40px;
+}
+
+/* ----------------------- */
+
+/* --- Main --- */
+
+    /*  Sous-menu  */
 .sub-nav {
     margin: 70px 0;
     font-weight: 700;
@@ -110,7 +247,7 @@ a{
     border-bottom: 2px solid #000000;
 }
 
-/* --- Liste image --- */
+    /*  Liste image  */
 
 .talent {
     width: 90%;
@@ -184,7 +321,7 @@ a{
     color: #ffffff;
 }
 
-/* --- Stories --- */
+    /*  Stories  */
 
 .stories {
     width: 90%;
@@ -265,17 +402,10 @@ a{
 
 /* ----------------------- */
 
-
 .image4 img {
     width: 684px;
     height: 520px;
 }
-
-/* ===================================================== */
-
-/* ===================================================== */
-
-/* ===================================================== */
 
 /* --- footer --- */
 
