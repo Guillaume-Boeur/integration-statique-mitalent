@@ -215,3 +215,53 @@ a{
 .section-3 a:hover{
     color: #B5D3D3;
 }
+
+/* footer */
+footer {
+    margin: 0 5% 0 5%;
+  }
+  
+  footer .footer_haut {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  footer .footer_haut .footer_droite {
+    display: flex;
+    padding: 20px;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    word-spacing: 0.2em;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  footer .footer_haut .footer_droite hr {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  footer hr {
+    border: 0.4px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  footer .footer_bas {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+  }
+  
+  footer .footer_bas p {
+    font-size: 0.8em;
+  }
+  
+  footer .footer_bas ul {
+    display: flex;
+  }
+  
+  footer .footer_bas ul li {
+    display: flex;
+    list-style-type: none;
+    padding: 0 20px 0 0;
+  }
