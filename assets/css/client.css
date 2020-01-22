@@ -142,7 +142,7 @@ nav hr {
 }
 
 .milieu_gauche .contain_milieu_gauche h1 {
-  font-size: 4em;
+  font-size: 330%;
   margin-bottom: 1%;
 }
 
@@ -215,6 +215,7 @@ nav hr {
 .milieu_droite .description .contain_description h1 {
   margin-top: 0;
   margin-left: 10%;
+  font-size: 150%;
 }
 
 .milieu_droite .description .contain_description .contain_description_haut {

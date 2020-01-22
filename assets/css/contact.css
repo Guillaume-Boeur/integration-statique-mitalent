@@ -28,7 +28,7 @@ nav {
 
 nav #mainTitle {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5em;
+  font-size: 250%;
   margin-right: 10%;
   margin-right: 0;
   margin-left: 8%;
@@ -175,7 +175,6 @@ nav hr {
 
 /* */
 .partie_milieu {
-  background-color: blue;
   grid-column-start: 5;
   grid-column-end: 10;
   grid-row-start: 1;
@@ -197,35 +196,57 @@ nav hr {
   font-size: 1.5em;
 }
 
+.contain_milieu #milieu_text #first_letter_milieu {
+  font-size: 270%;
+  position: relative;
+  bottom: 10px;
+  padding-bottom: 4px;
+  height: 45%;
+  width: 10%;
+  float: left;
+}
+
 .contact {
+  margin-top: -50%;
+  margin-bottom: -10%;
   height: 40%;
   display: grid;
-  background-color: blue;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 50%;
+  font: 'Nunito', sans-serif;
+}
+
+.contact p {
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .element_contact_adresse {
-  background-color: green;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.element_contact_phone {
-  background-color: purple;
-}
-
-.element_contact_mail {
-  background-color: yellow;
-}
-
 .element_contact {
   display: flex;
 }
 
+.element_contact i {
+  position: relative;
+  top: 12%;
+  margin-right: 5%;
+}
+
+/* partie droite */
+.partie_droite {
+  background-image: linear-gradient(to right top, #d9e7e7, #c7e3e3, #b4dedf, #a1dadb, #8cd5d7);
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
 /* */
+/* footer */
 footer {
   margin: 0 5% 0 5%;
 }
@@ -274,3 +295,5 @@ footer .footer_bas ul li {
   list-style-type: none;
   padding: 0 20px 0 0;
 }
+
+/* */
