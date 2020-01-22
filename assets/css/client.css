@@ -159,6 +159,11 @@ nav hr {
   justify-content: space-between;
 }
 
+.milieu_gauche .contain_milieu_gauche .leading p {
+  letter-spacing: 3px;
+  font-size: 0.8em;
+}
+
 .milieu_gauche .contain_milieu_gauche .leading .hrLeading {
   width: 20%;
   display: flex;
@@ -193,6 +198,37 @@ nav hr {
   background-color: rgba(238, 238, 238, 0.9);
   position: relative;
   top: 74%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.milieu_droite .description .contain_description {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.milieu_droite .description .contain_description p {
+  font-size: 0.6em;
+  letter-spacing: 3px;
+}
+
+.milieu_droite .description .contain_description h1 {
+  margin-top: 0;
+  margin-left: 10%;
+}
+
+.milieu_droite .description .contain_description .contain_description_haut {
+  display: flex;
+  align-items: center;
+}
+
+.milieu_droite .description .contain_description .contain_description_haut #hr_description {
+  height: 1px;
+  width: 20%;
+  border: 0.5px solid #B5D3D3;
+  background-color: #B5D3D3;
+  margin-right: 4%;
+  margin-left: -13%;
 }
 
 .milieu_droite .fleche {
@@ -201,4 +237,12 @@ nav hr {
   width: 20%;
   position: relative;
   top: 74%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.milieu_droite .fleche i {
+  margin: 20%;
 }
