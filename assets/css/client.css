@@ -1,5 +1,6 @@
 body{
     width: 1920px;
+    max-width: 1920px;
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
@@ -328,9 +329,9 @@ a{
     margin-top: 15px;
 }
 .section-2{
-    width: 90%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 8% 15% 35% 25% 8% 20%;
+    grid-template-columns: 6% 13% 33% 23% 6% auto;
     grid-template-rows: 1fr 1fr 1fr;
 }
 .item-1{
