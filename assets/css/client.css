@@ -330,7 +330,7 @@ a{
 .section-2{
     width: 90%;
     display: grid;
-    grid-template-columns: 8% 15% 35% 25% 8% auto;
+    grid-template-columns: 8% 15% 35% 25% 8% 20%;
     grid-template-rows: 1fr 1fr 1fr;
 }
 .item-1{
@@ -410,7 +410,7 @@ a{
 }
 .item-5>img{
     height: 600px;
-    width: 1550px;
+    width: 100%;
 }
 .item-6{
     grid-column-start: 5;
@@ -436,7 +436,7 @@ a{
 }
 .item-7>img{
     height: 500px;
-    width: 380px;
+    width: 100%;
 }
 .item-8{
     grid-column-start: 1;
