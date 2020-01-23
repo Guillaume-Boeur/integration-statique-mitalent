@@ -4,6 +4,8 @@ body{
     margin: 0;
 }
 
+/* ---Début Header Tom--- */
+
 .partie {
     width: 100vw;
     height: 90vh;
@@ -188,7 +190,7 @@ nav hr {
     grid-row-end: 5;
     width: 175%;
     height: 90%;
-    background-image: url("../img/photo_talent.jpg");
+    background-image: url("../images/photo_talent.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -251,7 +253,9 @@ nav hr {
     margin: 20%;
 }
 
-/* Section 1 */
+/* Fin Header Tom */
+
+/* ---Début Section 1--- */
 
 .section-1{
     margin-bottom: 60px;
@@ -306,7 +310,10 @@ li{
 a{
     text-decoration: none;
 }
-/* Section 2 */
+
+/* Fin Section 1 */
+
+/* ---Début Section 2--- */
 
 .float-left{
     float: left;
@@ -430,8 +437,9 @@ a{
     width: 20px;
     background-color: #B5D3D3;
 }
+/* Fin Section 2 */
 
-/* Section 3 */
+/* ---Début Section 3--- */
 
 .latest{
     text-align: center;
@@ -463,8 +471,9 @@ a{
 .section-3 a:hover{
     color: #B5D3D3;
 }
+/* Fin Section 3*/
 
-/* footer */
+/* ---Début Footer Tom--- */
 
 footer {
     margin: 0 5% 0 5%;
@@ -514,3 +523,5 @@ footer {
     list-style-type: none;
     padding: 0 20px 0 0;
   }
+
+  /* Fin Footer Tom */
