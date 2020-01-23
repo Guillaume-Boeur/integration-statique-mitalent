@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     height: 100%;
-    width: 100%;
+    width: 1920px;
 }
 
 h1 {
@@ -107,7 +107,7 @@ a{
 header {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 90%;
     margin: 20px auto;
 }
 
@@ -170,7 +170,7 @@ header {
 .intro-image {
     position: absolute;
     bottom: 0;
-    left: 260px;
+    left: 320px;
     z-index: -1;
     width: 1120px;
 }
@@ -183,17 +183,13 @@ header {
 
 .intro h1 {
     width: 100%;
-    margin-left: 180px;
+    margin-left: 200px;
     font-size: 500%;
 }
 
 .intro .intro-p {
-    margin-left: 161px;
-    margin-right: 1080px;
-}
-
-.intro .intro-sub-nav {
-    text-align: right;
+    margin-left: 181px;
+    margin-right: 1180px;
 }
 
 .intro .intro-sub-nav li {
@@ -211,7 +207,7 @@ header {
 .intro .intro-profile p {
     margin: 0;
     align-self: center;
-    padding: 30px 80px;
+    padding: 30px 110px;
     background-color: #b5d3d3;
 }
 
