@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+}
+
+.partie {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr 1fr);
+  grid-auto-rows: 25%;
+}
+
+/* navbar */
+.navbar {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 1;
+}
+
+nav {
+  margin-top: 1%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.8em;
+  margin-right: 2%;
+}
+
+nav #mainTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  margin-right: 10%;
+  margin-right: 0;
+  margin-left: 8%;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 3%;
+  display: flex;
+  align-items: center;
+}
+
+nav .nav_gauche {
+  display: flex;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+nav .nav_gauche li {
+  padding-right: 20%;
+  font-family: 'Nunito', sans-serif;
+}
+
+nav .search {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.8em;
+}
+
+nav .search i {
+  font-size: 1.5em;
+}
+
+nav #searchClient {
+  margin-right: 40%;
+}
+
+nav hr {
+  border: 0.5px solid lightgrey;
+}
+
+/* */
+/* partie gauche */
+.partie_gauche {
+  background-color: #D8EBED;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: -2%;
+}
+
+.icon ul li {
+  list-style-type: none;
+  padding: 70%;
+}
+
+.boutton_contact {
+  background-color: yellow;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  height: 45%;
+  position: relative;
+  top: 55%;
+}
+
+.boutton_contact button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-image: linear-gradient(to right top, #d9e7e7, #c7e3e3, #b4dedf, #a1dadb, #8cd5d7);
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+}
+
+.boutton_contact_user {
+  background-color: #FFFFFF;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  height: 45%;
+  width: 60%;
+  position: relative;
+  top: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+/* */
+/* partie mileu */
+.partie_milieu {
+  margin-top: 20%;
+  background-color: #FFFFFF;
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  font-family: 'Nunito', sans-serif;
+}
+
+.contain_partie_milieu {
+  width: 60%;
+  height: 100%;
+  background-color: #FFFFFF;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.text_milieu {
+  height: 50%;
+}
+
+.text_milieu h3::first-letter {
+  float: left;
+  padding: 3px;
+  font-size: 2.1em;
+}
+
+.text_milieu p {
+  font-weight: 200;
+}
+
+.image_motivation {
+  height: 30%;
+  width: 100%;
+  margin-top: 20%;
+  background-image: url("../images/motivation.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* */
+/* partie droite */
+.partie_droite_haut {
+  background-color: #D8EBED;
+  grid-column-start: 10;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.partie_droite_bas {
+  background-color: #FFFFFF;
+  grid-column-start: 10;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+/* */
+footer {
+  margin: 0 5% 0 5%;
+}
+
+footer .footer_haut {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+}
+
+footer .footer_haut .footer_droite {
+  display: flex;
+  padding: 20px;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  word-spacing: 0.2em;
+  font-family: 'Nunito', sans-serif;
+}
+
+footer .footer_haut .footer_droite hr {
+  display: flex;
+  margin-right: 20px;
+}
+
+footer hr {
+  border: 0.4px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer_bas {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+}
+
+footer .footer_bas p {
+  font-size: 0.8em;
+}
+
+footer .footer_bas ul {
+  display: flex;
+}
+
+footer .footer_bas ul li {
+  display: flex;
+  list-style-type: none;
+  padding: 0 20px 0 0;
+}
