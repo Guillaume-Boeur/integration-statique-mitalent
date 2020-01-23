@@ -1,0 +1,454 @@
+/* --- Mise a zero --- */
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*------------------------------*/
+
+/* --- Utilise plusieur fois --- */
+
+    /* font */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+    /* color */
+
+.color-black {
+    color: #000000;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-grey {
+    color: #6a696f;
+}
+
+.color-blue {
+    color: #b5d3d3;
+}
+
+    /* display */
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+    /* autre */
+
+.image-text-vertical > a {
+    flex-direction: column;
+}
+
+.image-text-left > a {
+    flex-direction: row-reverse;
+}
+
+.image-text-bottom > a {
+    align-items: flex-end;
+}
+
+.image-text-grand {
+    font-size: 150%;
+}
+
+/*------------------------------*/
+
+/* --- header --- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+}
+
+    /*  navbar  */
+
+.nav {
+    font-size: 0.8em;
+    align-items: center;
+}
+
+.nav .nav-gauche {
+    display: flex;
+    letter-spacing: 2px;
+    align-items: center;
+    width: 450px;
+}
+
+.nav .nav-gauche li {
+    padding-right: 50px;
+}
+
+.nav #mainTitle {
+    font-size: 2.5em;
+}
+
+.nav .search {
+    width: 450px;
+    text-align: end;
+}
+
+/* ----------------------- */
+
+    /*  intro  */
+
+.carre-bleu {
+    position: absolute;
+    background-color: #b5d3d3;
+    width: 660px;
+    height: 620px;
+    z-index: -2;
+    right: 0;
+    top: 0;
+}
+
+.intro {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.intro .icon {
+    margin-top: 120px;
+    width: 100%;
+}
+
+.intro .icon li {
+    padding: 20px 0;
+}
+
+.intro-image {
+    position: absolute;
+    bottom: 0;
+    left: 260px;
+    z-index: -1;
+    width: 1120px;
+}
+
+.intro-image img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.intro h1 {
+    width: 100%;
+    margin-left: 180px;
+    font-size: 500%;
+}
+
+.intro .intro-p {
+    margin-left: 161px;
+    margin-right: 1080px;
+}
+
+.intro .intro-sub-nav {
+    text-align: right;
+}
+
+.intro .intro-sub-nav li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.intro .intro-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.intro .intro-profile p {
+    margin: 0;
+    align-self: center;
+    padding: 30px 80px;
+    background-color: #b5d3d3;
+}
+
+.intro .intro-profile .intro-profile-icone{
+    background-color: #ffffff;
+    padding: 30px 40px;
+    width: 20px;
+}
+
+/* ----------------------- */
+
+/* --- Main --- */
+
+    /*  Sous-menu  */
+.sub-nav {
+    margin: 70px 0;
+    font-weight: 700;
+}
+
+.sub-nav > ul {
+    flex-direction: row;
+}
+
+.sub-nav > ul > li {
+    text-transform: uppercase;
+    padding: 0 30px;
+    font-weight: 500;
+}
+
+.sub-nav > ul > li > a {
+    color: #6a696f;
+}
+
+.sub-nav > ul > li > a:hover {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+    /*  Liste image  */
+
+.talent {
+    width: 90%;
+    margin: auto;
+}
+
+.talent > ul {
+    flex-wrap: wrap;
+}
+
+.talent > ul > li {
+    height: 473px;
+    width: 375px;
+    position: relative;
+}
+
+.talent > ul > li > img {
+    height: 100%;
+    width: 100%;
+}
+
+.talent > ul > li > a {
+    position: absolute;
+    color: #ffffff;
+    top: 15px;
+    width: 45px;
+    right: 15px;
+    text-align: right;
+}
+
+.talent > ul > li > a > img {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.talent > ul > li > h3 {
+    position: absolute;
+    color: #ffffff;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 200%;
+}
+
+.talent > ul > li > p {
+    position: absolute;
+    color: #ffffff;
+    top: 75%;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+.talent > p {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 90px 0;
+}
+
+.talent > p > a {
+    background-color: #b5d3d3;
+    display: inline;
+    padding: 15px 40px;
+    border-radius: 40px;
+    color: #ffffff;
+}
+
+    /*  Stories  */
+
+.stories {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.stories > h2 {
+    text-align: center;
+    font-size: 300%;
+    margin: 30px 0;
+}
+
+.stories > hr {
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.stories > div > ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 140px 520px 422px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.stories > div > ul > li > a {
+    display: flex;
+    height: 100%;
+}
+
+.stories > div > ul > li > a > div {
+    margin: 20px;
+}
+
+.stories > div > ul > li > a > div > p:last-of-type {
+    font-size: 70%;
+    color: #6a696f;
+}
+
+.image-petite img {
+    width: 150px;
+    height: 130px;
+}
+
+.stories img {
+    width: 100%;
+    height: 100%;
+}
+
+    /* Placement des photos dans la grille */
+
+.image1 {
+    grid-area: 1/1/2/2;
+}
+
+.image2 {
+    grid-area: 1/2/2/3;
+}
+
+.image3 {
+    grid-area: 1/3/2/4;
+}
+
+.image4 {
+    grid-area: 2/1/3/3;
+}
+
+.image5 {
+    grid-area: 2/3/4/4;
+}
+
+.image6 {
+    grid-area: 3/1/4/2;
+}
+
+.image7 {
+    grid-area: 3/2/4/3;
+}
+
+/* ----------------------- */
+
+.image4 img {
+    width: 684px;
+    height: 520px;
+}
+
+/* --- footer --- */
+
+footer {
+    margin: 0 5% 0 5%;
+}
+
+footer hr {
+    border: 0.4px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .haut {
+    font-family: 'Playfair Display', serif;
+}
+
+footer .haut .droite {
+    padding: 20px;
+    font-size: 0.8em;
+    word-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .haut .droite hr {
+    margin-right: 20px;
+    border: 0.4px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .bas {
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+footer .bas p {
+    font-size: 0.8em;
+}
+
+footer .bas ul li {
+    display: flex;
+    list-style-type: none;
+    padding: 0 20px 0 0;
+}
+
+/* --- END --- */
