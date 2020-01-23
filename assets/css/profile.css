@@ -1,12 +1,15 @@
 
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   overflow: auto;
+  width: 1920px;
 }
 .page{
   margin: 40px;
+  
 }
 nav{
   font-family: 'Nunito', sans-serif;
@@ -128,11 +131,12 @@ nav ul li {
   grid-gap: 0px;
   align-items: center;
   justify-items: center;
+  height:500px;
 }
 
 .client{
-  height: 500px;
-  width: 455px;
+  height: 100%;
+  width: 100%;
 }
 
 .client:hover{
@@ -397,4 +401,3 @@ footer .footer p{
     margin-inline-end: 0px;
 }
 
-/*Menu déroulant*/
