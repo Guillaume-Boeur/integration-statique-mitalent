@@ -177,6 +177,8 @@ header {
 
 .intro-image img{
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .intro h1 {
@@ -216,6 +218,7 @@ header {
 .intro .intro-profile .intro-profile-icone{
     background-color: #ffffff;
     padding: 30px 40px;
+    width: 20px;
 }
 
 /* ----------------------- */
