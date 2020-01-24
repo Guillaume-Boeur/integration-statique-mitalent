@@ -3,6 +3,10 @@ body {
   max-width: 1920px;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .partie {
   height: 90vh;
   display: grid;
