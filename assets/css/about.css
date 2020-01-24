@@ -303,6 +303,7 @@ footer .footer_bas ul li {
   margin: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .talent > ul {
